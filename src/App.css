@@ -1,42 +1,62 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+body {
+  background-color: rgb(161, 138, 255);
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li.tarefa {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 300px;
+  height: 30px;
+  background-color: white;
+  border-radius: 15px;
+  margin-block: 10px;
+  padding: 10px;
+  padding-inline: 20px;
+  color: black;
+  font-size: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.cor {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
 }
 
-.card {
-  padding: 2em;
+.input input {
+  width: 400px;
+  height: 50px;
+  border-radius: 15px;
+  border: 0px;
+  padding-inline: 30px;
+}
+.input input:focus {
+  outline: none;
 }
 
-.read-the-docs {
-  color: #888;
+.lixeira {
+  cursor: pointer;
+  font-size: 22px;
+  color: rgb(161, 138, 255);
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+  height: 20px;
+  align-items: center;
+  overflow: visible;
+}
+
+.circle-check,
+.check-icon {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
 }
