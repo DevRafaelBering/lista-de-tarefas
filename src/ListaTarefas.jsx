@@ -25,8 +25,8 @@ export const ListaTarefas = ({ tarefas, setTarefas }) => {
                   src="./circle.svg"
                   className="circle-check"
                   onClick={() => {
-                    setTarefas(
-                      tarefas.map((tarefa) => {
+                    setTarefas((anterior) =>
+                      anterior.map((tarefa) => {
                         return tarefa.id === item.id
                           ? { ...tarefa, status: "completed" }
                           : tarefa;
@@ -39,8 +39,8 @@ export const ListaTarefas = ({ tarefas, setTarefas }) => {
                   src="./check-circle.svg"
                   className="check-icon"
                   onClick={() => {
-                    setTarefas(
-                      tarefas.map((tarefa) =>
+                    setTarefas((anterior) =>
+                      anterior.map((tarefa) =>
                         tarefa.id === item.id
                           ? { ...tarefa, status: "pending" }
                           : tarefa
